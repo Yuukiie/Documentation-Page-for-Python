@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+body {
+  max-width: 100%;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Besley', serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 348px;
+  height: 100%;
+  border-right: solid 2px;
+  border-color: #424242;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23e0d6cd' fill-opacity='0.39' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: #c2ce69;
+  z-index: 1;
+}
+
+header {
+  color: black;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: thin;
+  padding-top: 5px;
+}
+
+.nav-header {
+ font-family: 'Kaisei Decol', serif;
+}
+
+.main-doc header {
+ text-align: left;
+ margin: 0px;
+}
+
+.title {
+  text-align: center;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 87%;
+  padding: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  text-align: left;
+  padding-bottom: 0px;
+  border-bottom: 3px double;
+  color: white;
+  list-style: none;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  padding-left: 10px;
+  text-align: left;
+  color: #424242;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+transform: scale(1.05);  
+}
+
+hr {
+  color: #3db45d;
+}
+
+#main-doc {
+ position: absolute;
+ margin-left: 380px;
+ padding: 20px;
+ margin-bottom: 110px;
+}
+
+.section {
+margin: 15px;
+color: inherit;
+font-size: 0.96em;
+}
+
+section li {
+  margin: 10px 0px 0px 20px;
+}
+
+.sub-title {
+  text-align: left;
+}
+
+.float-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#mac-terminal {
+  width: 300px;
+  max-width: 320px;
+  height: 150px;
+  max-height: 150px;
+  float: right;
+  margin-right: 380px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#python-terminal {
+  display: flex;
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#move-image {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 60%;
+  max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+code {
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 2px;
+}
+
+.python-example {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  max-width: 100%;
+  width: 50%;
+  padding-left: 30px;
+  margin: 10px;
+  border-radius: 20px;
+  
+}
+
+.nav-header > ul {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1130px) {
+  #navbar {
+    position: absolute;
+  display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    z-index: 1;
+  }
+  .nav-link {
+    margin-left: 20px;
+  }
+  hr {
+    display: none;
+  }
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  margin-top: 220px;
+  margin-left: 0;
+}
+  #move-image {
+    width: 55%;
+  }
+  
+  #python-terminal {
+    width: 58%;
+    height: auto;
+  }
+  p {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .nav-header {
+    text-align: center;
+    padding-top: 2px;
+    margin: 0;
+  }
+  #navbar {
+    height: 23%;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding-top: 0;
+  } 
+  #navbar ul {
+  padding: 2px;
+  
+}
+  .nav-link {
+    margin-left: 10px;
+  }
+  header {
+    margin-left: 20px;
+  } 
+  .title {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  #python-terminal {
+    width: 100%;
+  }
+  #move-image {
+    width: 90%;
+    height: auto;
+  }
+  #main-doc {
+   position: relative;
+    margin-left: -10px;
+    padding-top: 20px;
+  }
+  p {
+   position: relative;
+    padding: 0px;
+  }
+}
